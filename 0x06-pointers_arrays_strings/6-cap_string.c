@@ -9,12 +9,12 @@
  */
 char *cap_string(char *str)
 {
-	char *p = str;
+		char *p = str;
 
-	/* Iterate through the string and capitalize the first letter  */
+	/* Iterate through the string and capitalize the first letter */
 	while (*p != '\0')
 	{
-		/* Capitalize the first letter of each that follows a separator */
+		/* Capitalize the first letter of each  that follows a separator */
 		if (*p >= 'a' && *p <= 'z' &&
 		    (*(p - 1) == ' ' || *(p - 1) == '\t' || *(p - 1) == '\n' ||
 		     *(p - 1) == ',' || *(p - 1) == ';' || *(p - 1) == '.' ||
@@ -22,7 +22,7 @@ char *cap_string(char *str)
 		     *(p - 1) == '(' || *(p - 1) == ')' || *(p - 1) == '{' ||
 		     *(p - 1) == '}'))
 		{
-			*p -= 32; /* Subtract the difference between lowercase and uppercase */
+			*p -= 32; /* Subtract the difference between lowercase and uppercase  */
 		}
 
 		p++;
